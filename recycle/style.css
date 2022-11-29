@@ -174,7 +174,7 @@ td {
 
 }
 
-#newsletter {
+#contact {
     height: 650px;
     width: 100%;
     background-image: url(background2.jpg);
@@ -185,7 +185,7 @@ td {
     text-align: center;
 }
 
-.newsletterdiv {
+.contactdiv {
     height: 450px;
     width:600px;
     display: inline-block;
@@ -198,11 +198,11 @@ td {
     margin: 0%;
 }
 
-.newsletterdiv h2 {
+.contactdiv h2 {
     padding: 20px;
 }
 
-.newsletterdiv a {
+.contactdiv a {
     width: 180px;
     margin: 25px;
     background-color: #50C878;
@@ -216,7 +216,7 @@ td {
 }
 
 
-.newsletterdiv a:hover {
+.contactdiv a:hover {
     background-color: green;
     transform: scale(90%);
 }

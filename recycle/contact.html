@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recycle! - Newsletter</title>
+    <meta charset="utf=8">
+    
+</head>
+<body>
+<style>
+  h2 {
+    font-size: 0.65cm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  }
+  
+  body {
+    background-image: url("background3.jpg");
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  
+  .box {
+    height: 500px;
+    width: 500px;
+    max-width: 500px;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: lightgreen;
+    border-radius: 10%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clear: both;
+  }
+  
+  .info {
+    text-align: center;
+  }
+  
+  
+  input {
+    width: 200px;
+    margin: 5px;
+    text-align: center;
+    display: table-cell;
+    clear: both;
+  }
+
+  textarea {
+    width: 200px;
+    
+    margin: 5px;
+    text-align: center;
+    display: table-cell;
+    clear: both;
+    
+  }
+  
+  select {
+    width: 208px;
+    display: flexbox;
+    margin: 5px;
+    text-align: center;
+    display: table-cell;
+    clear: both;
+  }
+  
+  label {
+    clear: none;
+    display: inline-block;
+    text-align:right;
+    width: 105px;
+    padding: 0;
+  }
+
+  .labels {
+    clear: none;
+    
+    text-align:right;
+    width: 105px;
+    padding: 0;
+  }
+
+  input[type=radio],
+  input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+    width: fit-content;
+    margin-left: 80px;
+  }
+
+  .radio {
+    text-align: left;
+  }
+  .radio label {
+    float: left;
+    
+  }
+  
+  input[type=submit],
+  input.submit {
+    width: 69px;
+  }
+
+  .font1 {
+    font-size: .5cm;
+  }
+
+  .home a {
+    width:fit-content;
+    padding: 6px 25px; 
+    background-color: green; 
+    color: #fff; 
+    border-radius: 20px ;
+    font-size: 15px;
+    letter-spacing: -.2px; 
+    display: inline-block; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+
+.home a:hover {
+    background-color: green;
+    transform: scale(110%);
+}
+
+  
+</style>
+<script src="javascript.js"></script>
+<div class="box">
+  <form name="newsletter" action="javascript:alert('Form has been successfully submitted!'); index.html"  onsubmit="return dataValidation()">
+    <div class="title">
+      <h2>Contact Us!</h2>
+    </div>
+    <div class="info">
+      <label>Full Name: </label><input type="text" name="name" placeholder="Full name"><br>
+      <label>Email Address: </label><input type="text" name="email" placeholder="Email"><br>
+      <label>Phone Number: </label><input type="text" onkeypress="return /[0-9]/i.test(event.key)" name="ph" placeholder="Phone number"><br>
+      <label class="labels" >Ask us a &nbsp; question:<br></label><textarea name="comment" form="usrform">(Optional)</textarea><br>
+      <label width="150">Newsletter or&nbsp; Contact us?: </label><select id="contact" name="contact" class="form-control">
+        <option value="Newsletter">Newsletter</option>
+        <option value="Contact us">Contact Us</option>
+        <option value="Both">Both</option>
+      </select> <br>
+      <b class="font1">Do you want us to contact you?</b>
+      
+      <div class="radio">
+        <input type="radio" class="radio" name="x" value="z" id="z" />
+        <label for="z">Yes</label><br>
+        <input type="radio" class="radio" name="x" value="z" id="zz" />
+        <label for="z">No</label><br>
+        
+      </div>
+    </div>
+    <input type="submit" value="Submit"> <br>
+    <br>
+    <br>
+    <div class="home">
+      <a href="index.html">Back to Home</a>
+    </div>   
+  </form>
+</div>
+</body>
+</html>
