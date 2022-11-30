@@ -61,18 +61,20 @@ td {
 }
 
 .intro-image {
-    height: 690px;
-    width: auto;
+    height: auto;
+    width: 100%;
     text-align: center;
     margin: 0;
 }
 
 .img1 {
     height: 360px;
-    max-width:100%;
+    max-width:90%;
     object-fit: fill;
-    border: 20px solid #E5FFCC;
+    border: 5px solid #E5FFCC;
     border-radius: 10%;
+    padding-top: 2%;
+    padding-left: 0;
 }
 
 .img2 {
@@ -124,10 +126,9 @@ td {
 
 
 #intro {
-    height: 690px;
+    height: auto;
     width: auto;
     text-align: center;
-    background-image: url(recycle.jpeg);
     background-size: cover;
     margin: 0;
 }
@@ -136,6 +137,7 @@ td {
     height:400px;
     width:auto;
     background-color: #E5FFCC;
+    margin-top: -5px;
     
 }
 
